@@ -32,13 +32,10 @@ public class Client {
         JButton downloadButton = new JButton("Download");
         JButton removeButton = new JButton("Remove");
 
-
         frame.getContentPane().add(BorderLayout.NORTH, ta);
-
         frame.getContentPane().add(BorderLayout.CENTER, downloadButton);
         frame.getContentPane().add(BorderLayout.EAST, uploadButton);
         frame.getContentPane().add(BorderLayout.WEST, removeButton);
-
 
         uploadButton.addActionListener(e -> {
             System.out.println(sendFile(ta.getText()));

@@ -57,7 +57,6 @@ public class ClientHandler implements Runnable {
                                 out.write(buffer, 0, read);
                             }
                             out.flush();
-
 //                            out.writeUTF("DONE");
                         }
                     } catch (Exception e) {
